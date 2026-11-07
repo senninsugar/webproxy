@@ -1,0 +1,13 @@
+{
+  "name": "uv-engine",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "key": "node scripts/genkey.mjs --force",
+    "predeploy": "node scripts/genkey.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": { "acorn": "^8.12.1" },
+  "devDependencies": { "wrangler": "^3.80.0" }
+}
